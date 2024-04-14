@@ -35,6 +35,7 @@
 		"@fontsource-variable/montserrat": "^5.0.18",
 		"@fontsource-variable/public-sans": "^5.0.18",
 		"@fontsource-variable/syne": "^5.0.19",
+		"@vercel/speed-insights": "^1.0.10",
 		"fontsource-syne": "^4.0.0"
 	}
 }
