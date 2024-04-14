@@ -18,6 +18,7 @@
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
 	color: var(--color-text);
+	font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);;
 }
 
 body {

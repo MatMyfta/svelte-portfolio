@@ -10,7 +10,7 @@
 <section class="bg-greenSoft border-b-4 w-100 py-12">
 	<div class="container mx-auto px-4">
 		<h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Progetti</h1>
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+		<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 			{#each projects as project}
 				<div class="card bg-[#fff]">
 					<div class="bg-[#e4e4e4] w-100 aspect-[16/9] rounded-[6px]"></div>
@@ -40,3 +40,15 @@
         </div>
 	</div>
 </section>
+
+<style>
+    .card h1, .card p {
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+    .card p {
+        -webkit-line-clamp: 3;
+    }
+</style>
