@@ -30,7 +30,7 @@
 					{/each} -->
 					<li class="flex items-center space-x-3 pb-1">
 						{#each socials as social}
-							<a class="btn-light px-2 py-2" href={social.route}>
+							<a class="btn-light px-2 py-2" href={social.route} target="_blank">
 								<img width="24px" height="24px" src={social.icon} alt={social.name} />
 							</a>
 						{/each}

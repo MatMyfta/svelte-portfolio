@@ -13,6 +13,8 @@ export default {
       yellowAccent: '#FFDC58',
       violetSoft: '#e3dff2',
       magentaAccent: '#bd52eb',
+      redSoft: '#fcd7d7',
+      redAccent: '#ff6b6b',
     },
     fontFamily: {
       display: 'Public Sans',
