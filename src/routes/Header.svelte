@@ -3,7 +3,8 @@
 	import '@fontsource-variable/syne';
 	import github from '$lib/images/github.svg';
 	import linkedin from '$lib/images/linkedin.svg';
-	import mmphoto from '$lib/images/mateo_myftaraj_photo.png';
+	import personalPhotoJpg from '$lib/images/mateo_myftaraj_photo.jpg';
+	import personalPhotoWebp from '$lib/images/mateo_myftaraj_photo.webp';
 
 	let items = [];
 	let socials = [
@@ -39,18 +40,23 @@
 		</div>
 	</div>
 
-	<div class="container px-2 mx-auto my-20 gap-4 grid grid-cols-1 lg:grid-cols-7 items-center">
+	<div class="container px-2 mx-auto mt-2 mb-8 sm:my-20 gap-4 grid grid-cols-1 lg:grid-cols-7 items-center">
 		<div class="order-first lg:order-last lg:col-span-4 justify-self-center w-full">
-			<img
-				class="photo-image w-full object-contain border-4"
-				src={mmphoto}
-				alt="Mateo Myftaraj in Termoli, Italy"
-			/>
+			<picture>
+				<source srcset="{personalPhotoWebp}" type="image/webp">
+				<source srcset="{personalPhotoJpg}" type="image/jpeg">
+				<img
+					class="photo-image w-full object-contain border-4"
+					src={personalPhotoJpg}
+					alt="Mateo Myftaraj in Termoli, Italy"
+					title="Mateo Myftaraj in Termoli, Italy"
+				/>
+			</picture>
 		</div>
-		<div class="order-last lg:order-first lg:col-span-3 my-8 lg:my-0">
+		<div class="order-last lg:order-first lg:col-span-3 my-0 lg:my-0">
 			<h1 class="font-['Syne_Variable'] font-[900] text-4xl lg:text-6xl">Ciao, sono<br />Mateo</h1>
-			<h2 class="font-['Syne_Variable'] font-[200] text-xl lg:text-2xl">Sviluppatore Web</h2>
-			<p class="mt-4 mb-16">
+			<h2 class="font-['Syne_Variable'] font-[600] text-xl lg:text-2xl">Sviluppatore Web</h2>
+			<p class="mt-4 mb-12">
 				Sono uno sviluppatore web appassionato con una solida esperienza nella programmazione
 				software, maturata grazie alla mia formazione superiore e universitaria e anche grazie alle
 				mie esperienze lavorative. Con competenze che spaziano dalla progettazione
