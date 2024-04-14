@@ -13,9 +13,9 @@
 	];
 </script>
 
-<header>
+<header class="border-b-4">
 	<div class="border-b-4 bg-[#fff] py-8">
-		<div class="container px-2 mx-auto flex justify-between items-center">
+		<div class="container px-4 mx-auto flex justify-between items-center">
 			<div class="corner">
 				<a class="logo" href="/">Mateo Myftaraj</a>
 			</div>
@@ -40,7 +40,7 @@
 		</div>
 	</div>
 
-	<div class="container px-2 mx-auto mt-2 mb-8 sm:my-20 gap-4 grid grid-cols-1 lg:grid-cols-7 items-center">
+	<div class="container px-4 mx-auto mt-4 mb-8 sm:my-20 gap-4 grid grid-cols-1 lg:grid-cols-7 items-center">
 		<div class="order-first lg:order-last lg:col-span-4 justify-self-center w-full">
 			<picture>
 				<source srcset="{personalPhotoWebp}" type="image/webp">
@@ -55,8 +55,8 @@
 			</picture>
 		</div>
 		<div class="order-last lg:order-first lg:col-span-3 my-0 lg:my-0">
-			<h1 class="font-['Syne_Variable'] font-[900] text-4xl lg:text-6xl">Ciao, sono<br />Mateo</h1>
-			<h2 class="font-['Syne_Variable'] font-[600] text-xl lg:text-2xl">Sviluppatore Web</h2>
+			<h1 class="font-[900] text-4xl lg:text-6xl">Ciao, sono<br />Mateo</h1>
+			<h2 class="font-[600] text-xl lg:text-2xl">Sviluppatore Web</h2>
 			<p class="mt-4 mb-12">
 				Sono uno sviluppatore web appassionato con una solida esperienza nella programmazione
 				software, maturata grazie alla mia formazione superiore e universitaria e anche grazie alle
