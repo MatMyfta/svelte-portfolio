@@ -2,7 +2,7 @@
 	import github from '$lib/images/github.svg';
 
 	const projects = [
-		{title: 'ML on MSP430', paragraph: 'Algoritmo di semi-supervised learning ottimizzato per sistemi embedded.', link: null, github: 'https://github.com/MatMyfta/ML-on-MSP430'},
+		{title: 'ML on MSP430', paragraph: 'Algoritmo di semi-supervised learning ottimizzato per sistemi embedded. Testato con diversi dataset su un MSP430', link: null, github: 'https://github.com/MatMyfta/ML-on-MSP430'},
     ];
 	// Object.entries() converts an Object into an array of arrays, each sub array first index is the a key and the second index is a value
 </script>
@@ -35,8 +35,8 @@
 				</div>
 			{/each}
 		</div>
-	</div>
-	<div class="container mx-auto mt-8 flex justify-center">
-		<a aria-disabled="true" role="link" class="btn btn-disabled bg-greenAccent">Vai ai progetti</a>
+        <div class="mt-8 flex justify-center">
+            <a aria-disabled="true" role="link" class="btn btn-disabled bg-greenAccent">Vai ai progetti</a>
+        </div>
 	</div>
 </section>

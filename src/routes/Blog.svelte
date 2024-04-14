@@ -1,4 +1,6 @@
 <script>
+	import WorkInProgress from "./WorkInProgress.svelte";
+
 	const sections = {
 		'Title 1': 'paragraph',
 		'Title 2': 'paragraph',
@@ -11,6 +13,8 @@
 <section class="bg-violetSoft border-b-4 w-100 py-12">
 	<div class="container mx-auto px-4">
 		<h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Blog</h1>
+        <WorkInProgress/>
+        <!-- 
 		<div class="grid grid-cols-1 xl:grid-cols-2 grid-rows-3 gap-4">
 			{#each Object.entries(sections) as [title, paragraph], index}
 				{#if index == 0}
@@ -44,8 +48,9 @@
 				{/if}
 			{/each}
 		</div>
+        <div class="mt-8 flex justify-center">
+            <a href="/" class="btn bg-magentaAccent">Vai al blog</a>
+        </div>
+        -->
 	</div>
-    <div class="container mx-auto mt-8 flex justify-center">
-        <a href="/" class="btn bg-magentaAccent">Vai al blog</a>
-    </div>
 </section>
