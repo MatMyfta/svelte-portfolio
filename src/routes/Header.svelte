@@ -46,7 +46,8 @@
 				<source srcset="{personalPhotoWebp}" type="image/webp">
 				<source srcset="{personalPhotoJpg}" type="image/jpeg">
 				<img
-					class="photo-image w-full object-contain border-4"
+					id="photo-image"
+					class="w-full object-contain border-4"
 					src={personalPhotoJpg}
 					alt="Mateo Myftaraj in Termoli, Italy"
 					title="Mateo Myftaraj in Termoli, Italy"
@@ -77,8 +78,9 @@
 		font-size: 22px;
 	}
 
-	.photo-image {
+	#photo-image {
 		border-radius: 10px;
 		box-shadow: 4px 4px var(--color-black);
+		background: var(--color-black);
 	}
 </style>
