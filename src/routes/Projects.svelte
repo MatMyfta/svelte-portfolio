@@ -41,7 +41,7 @@
                             class="w-full h-full object-cover"
                             alt="{project.alt}" 
                             loading="lazy"
-                            src="src/lib/images/projects/{project.cover}" />
+                            src="/{project.cover}" />
 					</div>
 					<div class="h-40">
 						<h1 class="text-2xl font-[600] mt-2">{project.title}</h1>
