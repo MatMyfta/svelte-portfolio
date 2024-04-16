@@ -2,6 +2,7 @@
 	import Projects from './Projects.svelte';
 	import personalPhotoJpg from '$lib/images/mateo_myftaraj_photo.jpg';
 	import Blog from './Blog.svelte';
+	import About from './About.svelte';
 </script>
 
 <svelte:head>
@@ -14,5 +15,6 @@
 	<meta name="og:image" content="{personalPhotoJpg}" />
 </svelte:head>
 
+<About/>
 <Projects/>
 <Blog/>

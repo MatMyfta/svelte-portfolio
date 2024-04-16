@@ -30,7 +30,7 @@
 	// Object.entries() converts an Object into an array of arrays, each sub array first index is the a key and the second index is a value
 </script>
 
-<section class="bg-greenSoft border-b-4 w-100 py-12">
+<section class="bg-greenSoft border-y-4 w-100 py-12">
 	<div class="container mx-auto px-4">
 		<h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Progetti</h1>
 		<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
