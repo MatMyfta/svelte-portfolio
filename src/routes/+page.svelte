@@ -5,6 +5,7 @@
 </script>
 
 <svelte:head>
+	<meta charset="utf-8" />
 	<title>Mateo Myftaraj</title>
 	<meta name="description" content="Il portfolio e blog di Mateo Myftaraj" />
 	<meta name="og:title" content="Mateo Myftaraj" />
