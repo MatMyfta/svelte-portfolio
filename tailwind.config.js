@@ -3,7 +3,12 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     colors: {
+<<<<<<< HEAD
       bg: '#ffffff',
+=======
+      black: '#121212',
+      bg: '#fff4e0',
+>>>>>>> b01f677bcf66fe86a86d1fd6ae830bb26a6feb71
       main: '#FD9745',
       mainAccent: '#ffd43b', // not needed for shadcn
       greenSoft: '#daf5f0',
