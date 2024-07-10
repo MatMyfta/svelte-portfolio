@@ -12,7 +12,7 @@
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
 	--color-theme-1: #f94343;
-	--color-black: #2c2c2c;
+	--color-black: #121212;
 	--color-text: var(--color-black);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -82,9 +82,6 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
-@media (min-width: 720px) {
-}
-
 .visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -107,9 +104,14 @@ a.btn-light {
 }
 
 a.btn {
-	padding: 8px 20px;
+	padding: 4px 10px;
 	font-weight: bold;
-	font-size: 16px;
+}
+a.btn.btn-sm {
+	padding: 2px 5px;
+}
+a.btn.btn-lg {
+	padding: 6px 12px;
 }
 
 a.btn-disabled {
@@ -129,4 +131,18 @@ a.btn:hover {
 	border-radius: 10px;
 	padding: 4px;
 	overflow: hidden;
+}
+
+@media (min-width: 720px) {
+	a.btn {
+		padding: 8px 20px;
+	}
+	a.btn.btn-sm {
+		padding: 4px 10px;
+		font-size: 0.9em;
+	}
+	a.btn.btn-lg {
+		padding: 12px 24px;
+		font-size: 1.1em;
+	}
 }

@@ -65,7 +65,7 @@
 	{/each}
 </div>
 <div class="mt-8 flex justify-center">
-	<a href="/projects" class="btn bg-greenAccent">Vai ai progetti</a>
+	<a href="/projects" class="btn btn-lg bg-greenAccent">Vai ai progetti</a>
 </div>
 
 <style>
