@@ -27,9 +27,3 @@
         <svelte:component this={data.content}/>
     </div>
 </article>
-
-<style>
-    article .prose h2 {
-        font-size: 4em !important;
-    }
-</style>
