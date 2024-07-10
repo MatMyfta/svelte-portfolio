@@ -33,50 +33,53 @@
 </script>
 
 <section class="bg-[#fafafa] w-100 py-12">
-	<div class="container mx-auto px-4">
-		<h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Progetti</h1>
-		<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-			{#each projects as project}
-				<div class="card bg-[#fff]">
-					<div class="bg-[#e4e4e4] w-100 aspect-[16/9] rounded-[6px] overflow-hidden">
-						<img 
-                            class="w-full h-full object-cover"
-                            alt="{project.alt}" 
-                            loading="lazy"
-                            src="/images/projects/{project.cover}" />
-					</div>
-					<div class="h-40">
-						<h1 class="text-2xl font-[600] mt-2">{project.title}</h1>
-						<p class="mb-4">{project.paragraph}</p>
-					</div>
-					<div class="mb-2 grid grid-cols-2 justify-between mr-2">
-						<div class="flex justify-start">
-							{#if project.link}
-								<a href={project.link} class="btn bg-[#63e6be] inline-block">Leggi</a>
-							{/if}
-						</div>
-						<div class="flex justify-end">
-							{#if project.github}
-								<a href={project.github} class="btn bg-[#fff] inline-block" target="_blank">
-									<img width="24px" height="24px" src={github} alt="Github" />
-								</a>
-							{/if}
-						</div>
-					</div>
-				</div>
-				<div class="flex justify-end">
-					{#if project.github}
-						<a href={project.github} class="btn bg-[#fff] inline-block" target="_blank">
-							<img width="24px" height="24px" src={github} alt="Github" />
-						</a>
-					{/if}
-				</div>
-			</div>
-		</div>
-		<div class="mt-8 flex justify-center">
-			<a aria-disabled="true" role="link" class="btn btn-disabled bg-[#63e6be]">Vai ai progetti</a>
-		</div>
-	</div>
+
+  <div class="container mx-auto px-4">
+
+    <h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Progetti</h1>
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+
+      {#each projects as project}
+
+        <div class="card bg-[#fff]">
+
+          <div class="bg-[#e4e4e4] w-100 aspect-[16/9] rounded-[6px] overflow-hidden">
+            <img 
+              class="w-full h-full object-cover"
+              alt="{project.alt}" 
+              loading="lazy"
+              src="/images/projects/{project.cover}" />
+          </div>
+
+          <div class="h-40">
+            <h1 class="text-2xl font-[600] mt-2">{project.title}</h1>
+            <p class="mb-4">{project.paragraph}</p>
+          </div>
+
+          <div class="mb-2 grid grid-cols-2 justify-between mr-2">
+            <div class="flex justify-start">
+              {#if project.link}
+                <a href={project.link} class="btn bg-[#63e6be] inline-block">Leggi</a>
+              {/if}
+            </div>
+            <div class="flex justify-end">
+              {#if project.github}
+                <a href={project.github} class="btn bg-[#fff] inline-block" target="_blank">
+                  <img width="24px" height="24px" src={github} alt="Github" />
+                </a>
+              {/if}
+            </div>
+          </div>
+
+        </div>
+      {/each}
+
+    </div>
+
+    <div class="mt-8 flex justify-center">
+      <a aria-disabled="true" role="link" class="btn btn-disabled bg-[#63e6be]">Vai ai progetti</a>
+    </div>
+  </div>
 </section>
 
 <style>

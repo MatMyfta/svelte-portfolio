@@ -19,17 +19,7 @@
 
 <About />
 
-<section class="bg-greenSoft border-y-4 w-100 py-12">
-	<div class="container mx-auto px-4">
-		<h1 class="font-[900] text-3xl lg:text-5xl text-left mb-4">Progetti</h1>
 		<Projects />
-	</div>
-</section>
-<section class="bg-violetSoft border-b-4 w-100 py-12">
-	<div class="container mx-auto px-4">
-		<h1 class="font-[900] text-3xl lg:text-5xl text-left mb-4">Blog</h1>
 		<Blog posts={data}/>
-	</div>
-</section>
 
 <Footer />
