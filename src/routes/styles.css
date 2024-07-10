@@ -132,8 +132,6 @@ a.btn:hover {
 	padding: 4px;
 	overflow: hidden;
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: 720px) {
 	a.btn {
@@ -148,4 +146,3 @@ a.btn:hover {
 		font-size: 1.1em;
 	}
 }
->>>>>>> b01f677bcf66fe86a86d1fd6ae830bb26a6feb71
