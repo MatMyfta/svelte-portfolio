@@ -10,11 +10,9 @@
 	// Object.entries() converts an Object into an array of arrays, each sub array first index is the a key and the second index is a value
 </script>
 
-<section class="bg-violetSoft border-b-4 w-100 py-12">
+<section class="bg-mainAccent border-b-4 w-100 py-12">
 	<div class="container mx-auto px-4">
 		<h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Blog</h1>
-        <WorkInProgress/>
-        <!-- 
 		<div class="grid grid-cols-1 xl:grid-cols-2 grid-rows-3 gap-4">
 			{#each Object.entries(sections) as [title, paragraph], index}
 				{#if index == 0}
@@ -28,7 +26,7 @@
 								<p class="mb-4">{paragraph}</p>
 							</div>
 							<div class="mb-2">
-								<a href="/" class="btn bg-magentaAccent inline-block">Read more</a>
+								<a href="/" class="btn bg-greenAccent inline-block">Read more</a>
 							</div>
 						</div>
 					</div>
@@ -41,7 +39,7 @@
 								<p class="mb-4">{paragraph}</p>
 							</div>
 							<div class="w-full flex justify-end mb-2">
-								<a href="/" class="btn bg-magentaAccent inline-block">Read more</a>
+								<a href="/" class="btn bg-greenAccent inline-block">Read more</a>
 							</div>
 						</div>
 					</div>
@@ -49,8 +47,7 @@
 			{/each}
 		</div>
         <div class="mt-8 flex justify-center">
-            <a href="/" class="btn bg-magentaAccent">Vai al blog</a>
+            <a href="/" class="btn bg-greenAccent">Vai al blog</a>
         </div>
-        -->
 	</div>
 </section>

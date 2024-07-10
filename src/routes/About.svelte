@@ -10,7 +10,7 @@
             <source srcset="{personalPhotoJpg}" type="image/jpeg">
             <img
                 id="photo-image"
-                class="w-full object-contain border-4"
+                class="w-full object-contain"
                 src={personalPhotoJpg}
                 alt="Mateo Myftaraj in Termoli, Italy"
                 title="Mateo Myftaraj in Termoli, Italy"
@@ -36,7 +36,5 @@
 <style>
 	#photo-image {
 		border-radius: 10px;
-		box-shadow: 4px 4px var(--color-black);
-		background: var(--color-black);
 	}
 </style>

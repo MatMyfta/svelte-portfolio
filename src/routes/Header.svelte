@@ -12,7 +12,7 @@
 </script>
 
 <header>
-	<div class="border-b-4 bg-[#fff] py-8">
+	<div class="bg-[#fff] py-8">
 		<div class="container px-4 mx-auto flex justify-between items-center">
 			<div class="corner">
 				<a class="logo" href="/">Mateo Myftaraj</a>

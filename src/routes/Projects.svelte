@@ -30,7 +30,7 @@
 	// Object.entries() converts an Object into an array of arrays, each sub array first index is the a key and the second index is a value
 </script>
 
-<section class="bg-greenSoft border-y-4 w-100 py-12">
+<section class="bg-[#fafafa] w-100 py-12">
 	<div class="container mx-auto px-4">
 		<h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Progetti</h1>
 		<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -50,7 +50,7 @@
 					<div class="mb-2 grid grid-cols-2 justify-between mr-2">
 						<div class="flex justify-start">
 							{#if project.link}
-								<a href={project.link} class="btn bg-greenAccent inline-block">Leggi</a>
+								<a href={project.link} class="btn bg-[#63e6be] inline-block">Leggi</a>
 							{/if}
 						</div>
 						<div class="flex justify-end">
@@ -65,7 +65,7 @@
 			{/each}
 		</div>
 		<div class="mt-8 flex justify-center">
-			<a aria-disabled="true" role="link" class="btn btn-disabled bg-greenAccent">Vai ai progetti</a>
+			<a aria-disabled="true" role="link" class="btn btn-disabled bg-[#63e6be]">Vai ai progetti</a>
 		</div>
 	</div>
 </section>

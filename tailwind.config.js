@@ -3,11 +3,11 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     colors: {
-      bg: '#fff4e0',
+      bg: '#ffffff',
       main: '#FD9745',
-      mainAccent: '#fc7303', // not needed for shadcn
+      mainAccent: '#ffd43b', // not needed for shadcn
       greenSoft: '#daf5f0',
-      greenAccent: '#7fbc8c',
+      greenAccent: '#63e6be',
       violetAccent: '#c4a1ff',
       yellowSoft: '#FEF2E8',
       yellowAccent: '#FFDC58',
