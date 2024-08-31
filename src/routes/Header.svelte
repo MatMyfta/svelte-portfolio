@@ -3,11 +3,13 @@
 	import '@fontsource-variable/syne';
 	import github from '$lib/images/github.svg';
 	import linkedin from '$lib/images/linkedin.svg';
+	import instagram from '$lib/images/instagram.svg';
 
 	let items = [];
 	let socials = [
 		{ name: 'Github', route: 'https://github.com/MatMyfta', icon: github },
-		{ name: 'LinkedIn', route: 'https://www.linkedin.com/in/mateomyftaraj/', icon: linkedin }
+		{ name: 'LinkedIn', route: 'https://www.linkedin.com/in/mateomyftaraj/', icon: linkedin },
+		{ name: 'Instagram', route: 'https://www.instagram.com/matmyfta/', icon: instagram }
 	];
 </script>
 
@@ -28,7 +30,7 @@
 					{/each} -->
 					<li class="flex items-center space-x-3 pb-1">
 						{#each socials as social}
-							<a class="btn-light px-2 py-2" href={social.route} target="_blank">
+							<a class="" href={social.route} target="_blank">
 								<img width="24px" height="24px" src={social.icon} alt={social.name} />
 							</a>
 						{/each}
@@ -41,7 +43,6 @@
 
 <style>
 	.logo {
-		font-family: 'Syne Variable';
 		font-weight: 700;
 		font-size: 22px;
 	}

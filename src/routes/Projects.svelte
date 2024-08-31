@@ -1,5 +1,6 @@
 <script>
 	import github from '$lib/images/github.svg';
+	import chevronRight from '$lib/images/chevron-right.svg';
 
 	const projects = [
 		{
@@ -32,65 +33,36 @@
 	// Object.entries() converts an Object into an array of arrays, each sub array first index is the a key and the second index is a value
 </script>
 
-<section class="bg-[#fafafa] w-100 py-12">
+<section class="bg-[#f5f4f7] w-100 py-12">
+	<div class="container mx-auto px-4">
+		<h1 class="font-[600] text-3xl lg:text-4xl text-left mb-8">Progetti</h1>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+			<div class="projects">
+				<ul>
+					{#each projects as project}
+						<li class="py-4 border-b-2 border-[#ddd]">
+							<div class="flex gap-4 items-center">
+								{#if project.link}
+									<a href={project.link} class="p-2 bg-[#e2e1e9] rounded-full inline-block">
+										<img width="24px" height="24px" src={chevronRight} alt="Read" />
+									</a>
+								{/if}
+								{#if project.github}
+									<a href={project.github} class="p-2 bg-[#e2e1e9] rounded-full inline-block" target="_blank">
+										<img width="24px" height="24px" src={github} alt="Github" />
+									</a>
+								{/if}
+								<h1 class="text-2xl font-[600]">{project.title}</h1>
+							</div>
+						</li>
+					{/each}
+				</ul>
+			</div>
+			<div class="image lg:display-none"></div>
+		</div>
 
-  <div class="container mx-auto px-4">
-
-    <h1 class="font-[900] text-2xl lg:text-4xl text-left mb-4">Progetti</h1>
-    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-
-      {#each projects as project}
-
-        <div class="card bg-[#fff]">
-
-          <div class="bg-[#e4e4e4] w-100 aspect-[16/9] rounded-[6px] overflow-hidden">
-            <img 
-              class="w-full h-full object-cover"
-              alt="{project.alt}" 
-              loading="lazy"
-              src="/images/projects/{project.cover}" />
-          </div>
-
-          <div class="h-40">
-            <h1 class="text-2xl font-[600] mt-2">{project.title}</h1>
-            <p class="mb-4">{project.paragraph}</p>
-          </div>
-
-          <div class="mb-2 grid grid-cols-2 justify-between mr-2">
-            <div class="flex justify-start">
-              {#if project.link}
-                <a href={project.link} class="btn bg-[#63e6be] inline-block">Leggi</a>
-              {/if}
-            </div>
-            <div class="flex justify-end">
-              {#if project.github}
-                <a href={project.github} class="btn bg-[#fff] inline-block" target="_blank">
-                  <img width="24px" height="24px" src={github} alt="Github" />
-                </a>
-              {/if}
-            </div>
-          </div>
-
-        </div>
-      {/each}
-
-    </div>
-
-    <div class="mt-8 flex justify-center">
-      <a aria-disabled="true" role="link" class="btn btn-disabled bg-[#63e6be]">Vai ai progetti</a>
-    </div>
-  </div>
+		<!-- <div class="mt-8 flex justify-center">
+			<a href="/" aria-disabled="true" class="btn btn-disabled bg-[#ffd43b]">Vai ai progetti</a>
+		</div> -->
+	</div>
 </section>
-
-<style>
-	.card h1,
-	.card p {
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-		display: -webkit-box;
-	}
-	.card p {
-		-webkit-line-clamp: 3;
-	}
-</style>
