@@ -27,7 +27,7 @@
 	></div>
 
 	<div class="px-4">
-		<div class="container mx-auto prose px-6 py-4 text-lg bg-[#fff] rounded-xl">
+		<div class="container mx-auto prose sm:px-3 md:px-6 py-4 text-lg bg-[#fff] rounded-xl">
 			<svelte:component this={data.content} />
 		</div>
 	</div>

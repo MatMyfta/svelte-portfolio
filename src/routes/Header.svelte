@@ -31,7 +31,7 @@
 					<li class="flex items-center space-x-3 pb-1">
 						{#each socials as social}
 							<a class="" href={social.route} target="_blank">
-								<img width="24px" height="24px" src={social.icon} alt={social.name} />
+								<img class="size-6" src={social.icon} alt={social.name} />
 							</a>
 						{/each}
 					</li>

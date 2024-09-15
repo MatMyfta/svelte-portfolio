@@ -109,7 +109,7 @@
 		<h1 class="font-[600] text-center text-3xl lg:text-4xl mb-12">I miei attrezzi</h1>
 		<div class="mx-auto lg:w-3/5 flex flex-wrap justify-center gap-12">
 			{#each tools as tool}
-				<img width="56px" height="56px" src={tool.icon} alt="tool.name" />
+				<img class="size-12 md:size-16" src={tool.icon} alt="{tool.name}" />
 			{/each}
 		</div>
 	</div>
