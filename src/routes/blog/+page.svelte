@@ -1,6 +1,6 @@
 <script>
 	import { formatDate } from '$lib/utils.js';
-	
+
 	export let data;
 </script>
 
@@ -11,7 +11,7 @@
 			{#each data.postsByYear[year] as post}
 				<li class="my-1">
 					<span>{formatDate(post.date)}</span> - 
-					<a href="/blog/{post.slug}">{post.title}</a>
+					<a href="/blog/{post.slug}" class="font-[700]">{post.title}</a>
 				</li>
 			{/each}
 		</ul>
