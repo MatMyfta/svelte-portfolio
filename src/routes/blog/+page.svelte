@@ -9,9 +9,9 @@
 		<h1 class="font-[700] text-3xl lg:text-4xl mt-8">{year}</h1>
 		<ul class="mt-4">
 			{#each data.postsByYear[year] as post}
-				<li class="my-1">
-					<span>{formatDate(post.date)}</span> - 
-					<a href="/blog/{post.slug}" class="font-[700]">{post.title}</a>
+				<li class="my-2">
+					<span class="bg-[#f4f4f4] px-2 py-1 me-1 text-xs">{formatDate(post.date)}</span> 
+					<a href="/blog/{post.slug}" class="font-[700] underline">{post.title}</a>
 				</li>
 			{/each}
 		</ul>
