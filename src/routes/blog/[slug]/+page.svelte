@@ -27,7 +27,7 @@
 				<p class="text-xl font-[300] text-center mb-8">{data.meta.description}</p>
 				<div class="tags container mx-auto px-4 flex align-center justify-center flex-wrap gap-1 mb-8">
 					{#each data.meta.categories as category}
-						<div class="bg-[#fff] text-base px-3 py-1 rounded-full">&num;{category}</div>
+						<div class="bg-[#fff] text-sm px-3 py-1 rounded-full">&num;{category}</div>
 					{/each}
 				</div>
 				<div class="flex justify-center mb-6">
