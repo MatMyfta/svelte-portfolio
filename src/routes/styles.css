@@ -11,7 +11,7 @@
 	--color-bg-0: #ffffff;
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #f94343;
+	--color-theme-1: #ffd43b;
 	--color-black: #121212;
 	--color-text: var(--color-black);
 	--column-width: 42rem;
@@ -153,7 +153,14 @@ article h3 {
 }
 
 article p {
-	margin: 12px 0;
+	margin: 1em 0;
+	line-height: 1.75;
+}
+
+article ul {
+    list-style: disc;
+    padding-left: 2rem;
+    line-height: 2;
 }
 
 article pre {
@@ -162,8 +169,17 @@ article pre {
 	line-height: 1.5;
 }
 
+article a {
+	text-decoration: underline;
+	text-decoration-color: var(--color-theme-1);
+}
+
 .brutal-container {
 	box-shadow: 2px 6px 0 black;
+}
+
+.math.math-display {
+	margin: 2em 0;
 }
 
 @media (min-width: 720px) {
