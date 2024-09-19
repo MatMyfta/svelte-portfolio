@@ -1,12 +1,24 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { mdsvex } from 'mdsvex'
+import { mdsvex } from 'mdsvex';
+import rehypeKatexSvelte from 'rehype-katex-svelte';
+import remarkMath from 'remark-math';
+import readingTime from 'mdsvex-reading-time';
 
 // const extensions = ['.mjs', '.js', '.json', '.svelte', '.html', '.svx'];
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.md']
+	extensions: ['.md'],
+	remarkPlugins: [remarkMath, readingTime],
+	rehypePlugins: [
+		[
+			rehypeKatexSvelte,
+			{
+				output: 'mathml'
+			}
+		]
+	]
 };
 
 /** @type {import('@sveltejs/kit').Config} */
