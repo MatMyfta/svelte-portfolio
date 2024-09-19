@@ -11,7 +11,13 @@
 			{#each posts.posts as post, index}
 				<a href="/blog/{post.slug}">
 					<div class="card bg-[#fff] h-full grid">
-						<div class="bg-[#e4e4e4] w-full aspect-video rounded-[6px]"></div>
+						<div class="w-full aspect-video rounded-[6px] overflow-hidden">
+							<img
+								class="w-full h-full object-cover"
+								src={post.image}
+								alt={post.imagealt}
+							/>
+						</div>
 						<div class="h-full pt-2 pb-4">
 							<h1 class="text-xl md:text-2xl font-[600] mt-2">{post.title}</h1>
 						</div>
