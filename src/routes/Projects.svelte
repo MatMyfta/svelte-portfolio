@@ -28,7 +28,16 @@
 			github: 'https://github.com/MatMyfta/snake-game',
 			cover: 'snake-on-microcontroller.webp',
 			alt: 'Snake su microcontrollore con schermo LCD, immagine generata con Dall-e 3'
-		}
+		},
+		{
+			title: 'Clamp generator',
+			paragraph:
+				'Webapp basilare per la generazione di funzioni clamp() di CSS',
+			link: null,
+			github: 'https://github.com/MatMyfta/clamp-generator',
+			cover: '.webp',
+			alt: 'Siti responsive, immagine generata con Dall-e 3'
+		},
 	];
 	// Object.entries() converts an Object into an array of arrays, each sub array first index is the a key and the second index is a value
 </script>
