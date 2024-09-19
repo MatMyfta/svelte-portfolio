@@ -30,9 +30,10 @@
 						<div class="bg-[#fff] text-sm px-3 py-1 rounded-full">&num;{category}</div>
 					{/each}
 				</div>
-				<div class="flex justify-center mb-6">
-					<span class="font-semibold text-base">Pubblicato il {formatDate(data.meta.date)}</span>
-				</div>
+				<ul class="flex justify-center gap-8 mb-6 p-0">
+					<li class="list-none font-semibold text-base">Pubblicato il {formatDate(data.meta.date)}</li>
+					<li class="font-semibold text-base">{data.meta.readingTime.text}</li>
+				</ul>
 			</hgroup>
 		</div>
 	</section>
