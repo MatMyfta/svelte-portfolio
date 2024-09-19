@@ -2,7 +2,7 @@
 title: "CSS: generatori di clamp()"
 description: "A cosa serve la funzione clamp e come creare un generatore"
 date: '2024/09/19'
-language: Italiano
+language: IT
 categories:
     - CSS 
     - Javascript 

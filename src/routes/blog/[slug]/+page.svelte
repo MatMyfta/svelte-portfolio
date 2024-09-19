@@ -7,16 +7,22 @@
 
 <svelte:head>
 	<title>{data.meta.title}</title>
-	<meta property="twitter:type" content="article" />
-	<meta property="twitter:title" content={data.meta.title} />
-	<meta property="twitter:description" content={data.meta.description} />
-	<meta property="twitter:image" content={data.meta.image} />
-	<meta property="twitter:image:alt" content={data.meta.imagealt} />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
-	<meta property="og:description" content={data.meta.description} />
-	<meta property="og:image" content={data.meta.image} />
-	<meta property="og:image:alt" content={data.meta.imagealt} />
+	<meta name="description" content={data.meta.description} />
+	<meta name="author" content="Mateo Myftaraj, mateo@myftaraj.com" />
+	<meta name="language" content={data.meta.language}>
+	<meta name="robots" content="index,follow" />
+
+	<meta name="og:email" content="mateo@myftaraj.com" />
+	<meta name="og:title" content={data.meta.title} />
+	<meta name="og:type" content="article" />
+	<meta name="og:image" content={data.meta.image} />
+	<meta name="og:site_name" content="Mateo Myftaraj" />
+	<meta name="og:description" content={data.meta.description} />
+
+	<meta name="twitter:title" content={data.meta.title} />
+	<meta name="twitter:description" content={data.meta.description} />
+	<meta name="twitter:image" content={data.meta.image} />
+	<meta name="twitter:image:alt" content={data.meta.imagealt} />
 </svelte:head>
 
 <article class="bg-[#fff] mb-20">
