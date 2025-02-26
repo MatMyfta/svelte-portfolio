@@ -21,13 +21,13 @@ async function getPosts() {
 	return posts;
 }
 
-export async function GET({ url }) {
+export async function GET({ request }) {
 	try {
-		const limit = Number(url.searchParams.get('limit'));
+		const { searchParams } = new URL(request.url);
+		const limit = Number(searchParams.get('limit')) || 0;
 		const posts = await getPosts();
 
-		if (limit !== 0) return json(posts.slice(0, limit));
-		return json(posts);
+		return json(limit !== 0 ? posts.slice(0, limit) : posts);
 	} catch (error) {
 		console.error('API Error:', error);
 		return json({ error: 'Failed to fetch posts' }, { status: 500 });
