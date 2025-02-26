@@ -1,0 +1,38 @@
+{
+	"education": [
+		{
+			"title": "Libera Università di Bolzano",
+			"details": "Software Engineering",
+			"location": "Bolzano, IT",
+			"start_year": 2024,
+			"end_year": "Presente",
+			"logo": "/images/experience/unibz.png"
+		},
+		{
+			"title": "Università degli Studi di Trento",
+			"details": "Informatica",
+			"location": "Trento, IT",
+			"start_year": 2018,
+			"end_year": 2022,
+			"logo": "/images/experience/unitn.png"
+		},
+		{
+			"title": "IISS Galileo Galilei",
+			"details": "ITT Informatica e Telecomunicazioni",
+			"location": "Bolzano, IT",
+			"start_year": 2012,
+			"end_year": 2018,
+			"logo": "/images/experience/galilei.jpg"
+		}
+	],
+	"work_experience": [
+		{
+			"title": "Pixxelfactory",
+			"details": "Programmatore Web",
+			"location": "Bolzano, IT",
+			"start_year": 2022,
+			"end_year": "Presente",
+			"logo": "/images/experience/pixxel.png"
+		}
+	]
+}

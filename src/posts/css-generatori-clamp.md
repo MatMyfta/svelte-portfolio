@@ -1,15 +1,12 @@
 ---
 title: "CSS: generatori di clamp()"
-description: "A cosa serve la funzione clamp e come creare un generatore"
+description: "La funzione clamp() in CSS è uno strumento molto potente per creare dei layout responsive. La sua funzione è quella di impostare un valore che scala autonomamente al variare del viewport"
 date: '2024/09/19'
 language: IT
 categories:
     - CSS 
-    - Javascript 
-    - Tool
+    - Javascript
 published: true
-image: /images/posts/css-generatori-clamp.webp
-imagealt: "CSS: generatori di clamp"
 ---
 
 La funzione `clamp()` in CSS è uno strumento molto potente per creare dei layout responsive. La sua funzione è quella di impostare un valore che scala autonomamente al variare del viewport.
