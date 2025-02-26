@@ -41,7 +41,9 @@
 					class="tags container mx-auto px-4 flex align-center justify-center flex-wrap gap-1 mb-8"
 				>
 					{#each data.meta.categories as category}
-						<div class="line-clamp-1 py-2 px-3 rounded-full font-medium outline-offset-2 bg-zinc-700/50 text-zinc-400 text-sm">
+						<div
+							class="line-clamp-1 py-2 px-3 rounded-full font-medium outline-offset-2 bg-zinc-700/50 text-zinc-400 text-sm"
+						>
 							&num;{category}
 						</div>
 					{/each}
@@ -82,12 +84,16 @@
 		}
 	}
 
+	.article-container {
+		@apply text-zinc-400;
+	}
+
 	.article-container :global(*) {
 		grid-column: main;
 	}
-	
+
 	.article-container :global(p) {
-		@apply text-zinc-300 mb-8;
+		@apply mb-8;
 	}
 
 	/* Headings */
@@ -106,21 +112,25 @@
 	.article-container :global(h4),
 	.article-container :global(h5),
 	.article-container :global(h6) {
-		@apply text-xl font-medium text-zinc-400 mb-3;
+		@apply text-xl font-medium mb-3;
 	}
 
 	/* Lists */
 	.article-container :global(ul) {
-		@apply list-disc list-inside mb-4 text-zinc-300;
+		@apply list-disc list-inside mb-4;
 	}
 
 	.article-container :global(ol) {
-		@apply list-decimal list-inside mb-4 text-zinc-300;
+		@apply list-decimal list-inside mb-4;
 	}
 
 	.article-container :global(ul li),
 	.article-container :global(ol li) {
 		@apply pl-4;
+	}
+
+	.article-container :global(strong) {
+		@apply text-zinc-50;
 	}
 
 	/* Blockquotes */
@@ -148,7 +158,7 @@
 
 	/* Links */
 	.article-container :global(a) {
-		@apply text-blue-400 hover:underline;
+		@apply text-amber-500 underline underline-offset-4 transition hover:text-amber-400;
 	}
 
 	/* Horizontal Rule */
