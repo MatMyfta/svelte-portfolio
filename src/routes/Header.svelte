@@ -30,7 +30,7 @@
 					<picture>
 						<source srcset={personalPhotoWebp} type="image/webp" />
 						<img
-							class="w-28 h-28 object-cover rounded-full border-zinc-700 border-4"
+							class="w-20 h-20 sm:w-28 sm:h-28 object-cover rounded-full border-zinc-700 border-4"
 							src={personalPhotoWebp}
 							alt="Mateo Myftaraj in Termoli, Italy"
 							title="Mateo Myftaraj in Termoli, Italy"
