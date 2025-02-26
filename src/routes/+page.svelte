@@ -49,7 +49,7 @@
 			<div>
 				<a
 					href="/chi-sono"
-					class="line-clamp-1 py-4 px-6 rounded-full font-medium outline-offset-2 active:transition-none bg-zinc-700/50 hover:bg-zinc-700 transition text-zinc-400"
+					class="line-clamp-1 py-2 px-3 sm:py-4 sm:px-6 rounded-full font-medium outline-offset-2 active:transition-none bg-zinc-700/50 hover:bg-zinc-700 transition text-zinc-400"
 					>Scopri di più</a
 				>
 			</div>

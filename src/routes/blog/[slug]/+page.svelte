@@ -34,7 +34,7 @@
 	<section class="bg-mainAccent pb-10">
 		<div class="container mx-auto px-4">
 			<hgroup class="py-4 px-2">
-				<h1 class="font-[600] text-center text-zinc-100 text-xl lg:text-5xl md:text-3xl mb-4 mt-8">
+				<h1 class="font-[600] text-center text-zinc-100 text-3xl md:text-5xl mb-4 mt-8">
 					{data.meta.title}
 				</h1>
 				<div
