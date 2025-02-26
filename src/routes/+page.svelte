@@ -45,7 +45,7 @@
 			Sono un <strong>Developer Full-Stack</strong> e studente in
 			<strong>Software Engineering</strong> alla Libera Università di Bolzano.
 		</p>
-		<div class="flex justify-between items-center gap-4">
+		<div class="flex flex-wrap justify-between items-center gap-4">
 			<div>
 				<a
 					href="/chi-sono"
