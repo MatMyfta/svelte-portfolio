@@ -11,24 +11,31 @@
 	<meta name="author" content="Mateo Myftaraj, mateo@myftaraj.com" />
 	<meta name="language" content={data.meta.language} />
 	<meta name="robots" content="index,follow" />
+	<link rel="canonical" href="{data.meta.url}" />
 
-	<meta name="og:email" content="mateo@myftaraj.com" />
-	<meta name="og:title" content={data.meta.title} />
-	<meta name="og:type" content="article" />
-	<meta name="og:image" content={data.meta.image} />
-	<meta name="og:site_name" content="Mateo Myftaraj" />
-	<meta name="og:description" content={data.meta.description} />
+	<!-- Open Graph (OG) for Facebook, LinkedIn -->
+	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content={data.meta.image} />
+	<meta property="og:image:alt" content={data.meta.imagealt} />
+	<meta property="og:site_name" content="Mateo Myftaraj" />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:url" content={data.meta.url} />
 
-	<meta name="twitter:title" content={data.meta.title} />
-	<meta name="twitter:description" content={data.meta.description} />
-	<meta name="twitter:image" content={data.meta.image} />
-	<meta name="twitter:image:alt" content={data.meta.imagealt} />
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="{data.meta.image ? 'summary_large_image' : 'summary'}" />
+	<meta property="twitter:title" content={data.meta.title} />
+	<meta property="twitter:description" content={data.meta.description} />
+	<meta property="twitter:image" content={data.meta.image} />
+	<meta property="twitter:image:alt" content={data.meta.imagealt} />
 
+	<!-- PrismJS for Syntax Highlighting -->
 	<link
 		href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
 		rel="stylesheet"
 	/>
 </svelte:head>
+
 
 <article class="">
 	<section class="">

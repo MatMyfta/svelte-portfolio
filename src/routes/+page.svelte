@@ -1,6 +1,7 @@
 <script>
 	import personalPhotoWebp from '$lib/images/mateo_myftaraj_photo.webp';
 	import Footer from './Footer.svelte';
+  	import Meta from '$lib/components/Meta.svelte';
 
 	export let data;
 
@@ -18,14 +19,7 @@
 	import DetailedList from '$lib/components/DetailedList.svelte';
 </script>
 
-<svelte:head>
-	<title>Mateo Myftaraj</title>
-	<meta name="description" content="Il portfolio e blog di Mateo Myftaraj" />
-	<meta name="og:title" content="Mateo Myftaraj" />
-	<meta name="og:url" content="https://www.myftaraj.com" />
-	<meta name="og:description" content="Il portfolio e blog di Mateo Myftaraj" />
-	<meta name="og:image" content={personalPhotoWebp} />
-</svelte:head>
+<Meta/>
 
 <section class="container max-w-2xl lg:max-w-6xl px-4 mx-auto my-12 md:my-20 gap-4">
 	<div class="max-w-2xl my-0 lg:my-0">

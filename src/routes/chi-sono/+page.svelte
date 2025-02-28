@@ -1,5 +1,10 @@
 <script>
+    import Meta from '$lib/components/Meta.svelte';
 </script>
+
+<Meta
+    title="Chi sono"
+/>
 
 <div class="container max-w-2xl lg:max-w-4xl mx-auto px-4">
     <div class="text-2xl lg:text-4xl">
