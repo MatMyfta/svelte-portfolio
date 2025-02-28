@@ -27,7 +27,7 @@
 	<meta name="og:image" content={personalPhotoWebp} />
 </svelte:head>
 
-<section class="container max-w-2xl lg:max-w-6xl px-4 mx-auto mt-4 mb-28 sm:my-40 gap-4">
+<section class="container max-w-2xl lg:max-w-6xl px-4 mx-auto my-12 md:my-20 gap-4">
 	<div class="max-w-2xl my-0 lg:my-0">
 		<h1 class="font-[300] text-2xl lg:text-4xl text-zinc-400 mb-4">Ciao, sono Mateo</h1>
 		<h2 class="font-[700] text-2xl lg:text-4xl text-zinc-50 mb-6">
@@ -53,7 +53,6 @@
 				<div class="flex gap-4">
 					{#each socials as social}
 						<a class="[&>svg]:w-6 [&>svg>g>path]:fill-zinc-400" href={social.route} target="_blank">
-							<!-- <img class="size-6" src={social.icon} alt={social.name} /> -->
 							 { @html social.icon }
 						</a>
 					{/each}
@@ -63,7 +62,7 @@
 	</div>
 </section>
 
-<section class="container max-w-2xl lg:max-w-6xl mx-auto px-4">
+<section class="container max-w-2xl lg:max-w-6xl mx-auto px-4 mb-12 md:mb-20">
 	<div class="grid gap-y-10 grid-cols-1 lg:grid-cols-5 gap-10">
 		<div class="lg:col-span-3 flex flex-col">
 			{#each data.posts as post, index}

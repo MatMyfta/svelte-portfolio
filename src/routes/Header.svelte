@@ -23,7 +23,7 @@
 <header>
 	<div class="py-8">
 		<div
-			class="container max-w-2xl lg:max-w-6xl px-4 pb-8 mx-auto flex justify-between items-center"
+			class="container max-w-2xl lg:max-w-6xl px-4 mx-auto flex justify-between items-center"
 		>
 			<div class="flex gap-8 center items-center min-w-full justify-between">
 				<a href="/" class="">
