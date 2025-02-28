@@ -37,11 +37,6 @@
 			e <mark class="text-zinc-50 bg-amber-600 rounded-sm inline-block -rotate-2">Mobile</mark>
 		</h2>
 		<p class="mb-12 md:text-lg/8 text-zinc-400 [&>strong]:text-zinc-300">
-			<!-- Sono uno sviluppatore web appassionato con una solida esperienza nella programmazione
-			software, maturata grazie alla mia formazione superiore e universitaria e anche grazie alle
-			mie esperienze lavorative. Con competenze che spaziano dalla progettazione
-			all'implementazione, mi impegno a fornire prodotti di alta qualità che soddisfano le esigenze
-			dei clienti e superano le loro aspettative. -->
 			Sono un <strong>Developer Full-Stack</strong> e studente in
 			<strong>Software Engineering</strong> alla Libera Università di Bolzano.
 		</p>
