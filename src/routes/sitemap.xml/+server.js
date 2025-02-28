@@ -23,19 +23,58 @@ export async function GET() {
     (first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
   );
 
-  const staticPages = ['', 'chi-sono', 'blog']; // Add static pages here
-  const urls = [...staticPages, ...posts.map(post => `blog/${post.slug}`)];
+  // Define static pages with fixed priority and change frequency
+  const staticPages = [
+    { url: '', priority: 1.0, changefreq: 'daily' },         // Homepage
+    { url: 'chi-sono', priority: 0.9, changefreq: 'monthly' },
+    { url: 'blog', priority: 0.8, changefreq: 'daily' },
+  ];
 
+  // Get today's date to check for recent posts
+  const now = new Date();
+  const ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
+  const THIRTY_DAYS = 30 * 24 * 60 * 60 * 1000;
+
+  // Assign dynamic priority and change frequency to blog posts
+  const postUrls = posts.map(post => {
+    const postDate = new Date(post.date);
+    let priority = 0.5; // Default priority for older posts
+    let changefreq = 'monthly'; // Default change frequency
+
+    if (post.featured) {
+      priority = 0.8; // Higher priority for featured posts
+    } else if (now - postDate < THIRTY_DAYS) {
+      priority = 0.7; // Increase priority for recent posts
+    }
+
+    // Adjust change frequency based on post recency
+    if (now - postDate < ONE_WEEK) {
+      changefreq = 'daily';
+    } else if (now - postDate < THIRTY_DAYS) {
+      changefreq = 'weekly';
+    }
+
+    return {
+      url: `blog/${post.slug}`,
+      priority,
+      changefreq
+    };
+  });
+
+  // Merge static pages and dynamic blog post URLs
+  const urls = [...staticPages, ...postUrls];
+
+  // Generate XML sitemap
   const sitemap = `
     <?xml version="1.0" encoding="UTF-8" ?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${urls
         .map(
-          url => `
+          ({ url, priority, changefreq }) => `
         <url>
           <loc>https://myftaraj.com/${url}</loc>
-          <changefreq>weekly</changefreq>
-          <priority>0.7</priority>
+          <changefreq>${changefreq}</changefreq>
+          <priority>${priority}</priority>
         </url>
       `
         )
