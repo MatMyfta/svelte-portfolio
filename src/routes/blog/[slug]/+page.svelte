@@ -93,7 +93,7 @@
 	}
 
 	.article-container :global(p) {
-		@apply mb-8;
+		@apply mb-4;
 	}
 
 	/* Headings */
