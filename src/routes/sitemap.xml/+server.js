@@ -72,7 +72,7 @@ export async function GET() {
         .map(
           ({ url, priority, changefreq }) => `
         <url>
-          <loc>https://myftaraj.com/${url}</loc>
+          <loc>https://www.myftaraj.com/${url}</loc>
           <changefreq>${changefreq}</changefreq>
           <priority>${priority}</priority>
         </url>
