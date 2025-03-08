@@ -20,6 +20,12 @@
 <svelte:head>
 	<meta property="article:published_time" content={data.meta.date} />
 	<meta property="article:author" content="Mateo Myftaraj" />
+
+	<!-- PrismJS for Syntax Highlighting -->
+	<link
+		href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
+		rel="stylesheet"
+	/>
 </svelte:head>
 
 <article class="">
