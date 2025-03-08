@@ -144,6 +144,7 @@
 	/* Code Blocks */
 	.article-container :global(pre) {
 		@apply bg-zinc-900 text-zinc-200 p-4 rounded-lg overflow-x-auto mb-6;
+		grid-column: wide;
 	}
 	.article-container :global(pre > code) {
 		@apply bg-transparent p-0;
