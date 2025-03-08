@@ -17,6 +17,11 @@
 	language={data.meta.language}
 />
 
+<svelte:head>
+	<meta property="article:published_time" content={data.meta.date} />
+	<meta property="article:author" content="Mateo Myftaraj" />
+</svelte:head>
+
 <article class="">
 	<section class="">
 		<div class="container mx-auto px-4">
