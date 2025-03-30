@@ -22,9 +22,9 @@
 
 <Meta />
 
-<section class="container max-w-2xl lg:max-w-6xl px-4 mx-auto my-12 md:my-20 gap-4">
-	<div class="grid md:grid-cols-10 [&>div]:row-[1] items-center">
-		<div class="max-w-2xl my-0 lg:my-0 md:col-start-1 md:col-span-7">
+<section class="container max-w-2xl lg:max-w-6xl px-4 mx-auto mt-8 mb-12 md:mt-12 md:mb-20 gap-4">
+	<div class="grid md:grid-cols-10 [&>div]:row-[1] items-center group">
+		<div class="max-w-2xl my-0 lg:my-0 md:col-start-1 md:col-span-7 z-[1]">
 			<h1 class="font-[300] text-2xl lg:text-4xl text-zinc-400 mb-4">Ciao, sono Mateo</h1>
 			<h2 class="font-[700] text-2xl lg:text-4xl text-zinc-50 mb-6">
 				Ingegnere Software appassionato di Sviluppo <mark
@@ -60,8 +60,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="hidden md:block col-start-6 col-end-11 z-[-1]">
-			<img src={sg_photo} alt="" />
+		<div class="hidden md:block col-start-6 col-end-11">
+			<img
+				src={sg_photo}
+				alt=""
+				class="max-h-[650px] opacity-100 hover:opacity-30 transition-opacity"
+			/>
 		</div>
 	</div>
 </section>
