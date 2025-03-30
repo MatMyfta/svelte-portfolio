@@ -39,3 +39,9 @@ h2,
 h3 {
 	font-family: var(--font-roboto-serif);
 }
+
+@media (max-width: 1024px) {
+	:root {
+		font-size: 12pt;
+	}
+}
