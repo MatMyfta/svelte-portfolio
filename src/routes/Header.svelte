@@ -2,8 +2,6 @@
 	import { page } from '$app/stores';
 	import '@fontsource-variable/syne';
 
-	import personalPhotoWebp from '$lib/images/mateo_myftaraj_photo.webp';
-
 	let items = [
 		{
 			name: 'Home',
@@ -22,21 +20,9 @@
 
 <header>
 	<div class="py-8">
-		<div
-			class="container max-w-2xl lg:max-w-6xl px-4 mx-auto flex justify-between items-center"
-		>
+		<div class="container max-w-2xl lg:max-w-6xl px-4 mx-auto flex justify-between items-center">
 			<div class="flex gap-8 center items-center min-w-full justify-between">
-				<a href="/" class="">
-					<picture>
-						<source srcset={personalPhotoWebp} type="image/webp" />
-						<img
-							class="w-20 h-20 sm:w-28 sm:h-28 object-cover rounded-full border-zinc-700 border-4"
-							src={personalPhotoWebp}
-							alt="Mateo Myftaraj in Termoli, Italy"
-							title="Mateo Myftaraj in Termoli, Italy"
-						/>
-					</picture>
-				</a>
+				<a href="/" class="text-white text-2xl font-[900] font-['Roboto_Serif']">Mateo Myftaraj</a>
 				<nav class="flex">
 					<ul class="flex items-center justify-between space-x-6">
 						{#each items as item}
@@ -54,7 +40,6 @@
 						{/each}
 					</ul>
 				</nav>
-				<div class="w-28 hidden md:block"></div>
 			</div>
 		</div>
 	</div>

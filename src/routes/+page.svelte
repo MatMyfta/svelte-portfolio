@@ -1,13 +1,14 @@
 <script>
 	import personalPhotoWebp from '$lib/images/mateo_myftaraj_photo.webp';
 	import Footer from './Footer.svelte';
-  	import Meta from '$lib/components/Meta.svelte';
+	import Meta from '$lib/components/Meta.svelte';
 
 	export let data;
 
 	import github from '$lib/images/github.svg?raw';
 	import linkedin from '$lib/images/linkedin.svg?raw';
 	import instagram from '$lib/images/instagram.svg?raw';
+	import sg_photo from '$lib/images/mateo-sg.png';
 
 	let socials = [
 		{ name: 'Github', route: 'https://github.com/MatMyfta', icon: github },
@@ -19,39 +20,48 @@
 	import DetailedList from '$lib/components/DetailedList.svelte';
 </script>
 
-<Meta/>
+<Meta />
 
 <section class="container max-w-2xl lg:max-w-6xl px-4 mx-auto my-12 md:my-20 gap-4">
-	<div class="max-w-2xl my-0 lg:my-0">
-		<h1 class="font-[300] text-2xl lg:text-4xl text-zinc-400 mb-4">Ciao, sono Mateo</h1>
-		<h2 class="font-[700] text-2xl lg:text-4xl text-zinc-50 mb-6">
-			Ingegnere Software appassionato di Sviluppo <mark
-				class="text-zinc-50 bg-amber-600 rounded-sm inline-block -rotate-2">Web</mark
-			>
-			e <mark class="text-zinc-50 bg-amber-600 rounded-sm inline-block -rotate-2">Mobile</mark>
-		</h2>
-		<p class="mb-12 md:text-lg/8 text-zinc-400 [&>strong]:text-zinc-300">
-			Sono un <strong>Developer Full-Stack</strong> e studente in
-			<strong>Software Engineering</strong> alla Libera Università di Bolzano.
-		</p>
-		<div class="flex flex-wrap justify-between items-center gap-4">
-			<div>
-				<a
-					href="/chi-sono"
-					class="line-clamp-1 py-2 px-3 sm:py-4 sm:px-6 rounded-full font-medium outline-offset-2 active:transition-none bg-zinc-700/50 hover:bg-zinc-700 transition text-zinc-400"
-					>Scopri di più</a
+	<div class="grid md:grid-cols-10 [&>div]:row-[1] items-center">
+		<div class="max-w-2xl my-0 lg:my-0 md:col-start-1 md:col-span-7">
+			<h1 class="font-[300] text-2xl lg:text-4xl text-zinc-400 mb-4">Ciao, sono Mateo</h1>
+			<h2 class="font-[700] text-2xl lg:text-4xl text-zinc-50 mb-6">
+				Ingegnere Software appassionato di Sviluppo <mark
+					class="text-zinc-50 bg-amber-600 rounded-sm inline-block -rotate-2">Web</mark
 				>
-			</div>
-			<div class="flex items-center gap-4">
-				<p class="text-zinc-500">...o seguimi su</p>
-				<div class="flex gap-4">
-					{#each socials as social}
-						<a class="[&>svg]:w-6 [&>svg>g>path]:fill-zinc-400" href={social.route} target="_blank">
-							 { @html social.icon }
-						</a>
-					{/each}
+				e <mark class="text-zinc-50 bg-amber-600 rounded-sm inline-block -rotate-2">Mobile</mark>
+			</h2>
+			<p class="mb-12 md:text-lg/8 text-zinc-200 [&>strong]:text-zinc-300">
+				Sono un <strong>Developer Full-Stack</strong> e studente in
+				<strong>Software Engineering</strong> alla Libera Università di Bolzano.
+			</p>
+			<div class="flex flex-wrap justify-between items-center gap-4">
+				<div>
+					<a
+						href="/chi-sono"
+						class="line-clamp-1 py-2 px-3 sm:py-4 sm:px-6 rounded-full font-medium outline-offset-2 active:transition-none bg-zinc-700/50 hover:bg-zinc-700 transition text-zinc-400"
+						>Scopri di più</a
+					>
+				</div>
+				<div class="flex items-center gap-4">
+					<p class="text-zinc-500">...o seguimi su</p>
+					<div class="flex gap-4">
+						{#each socials as social}
+							<a
+								class="[&>svg]:w-6 [&>svg>g>path]:fill-zinc-400"
+								href={social.route}
+								target="_blank"
+							>
+								{@html social.icon}
+							</a>
+						{/each}
+					</div>
 				</div>
 			</div>
+		</div>
+		<div class="hidden md:block col-start-6 col-end-11 z-[-1]">
+			<img src={sg_photo} alt="" />
 		</div>
 	</div>
 </section>
