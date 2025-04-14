@@ -2,7 +2,7 @@
 	export let item;
 </script>
 
-<li class="flex gap-4 items-center">
+<li class="flex gap-4">
 	<div
 		class="relative mt-1 flex h-12 w-12 flex-none items-center justify-center rounded-full border-2 border-zinc-600"
 	>

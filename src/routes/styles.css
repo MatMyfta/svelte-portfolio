@@ -3,13 +3,14 @@
 @import '@fontsource-variable/public-sans';
 @import '@fontsource-variable/montserrat';
 @import '@fontsource-variable/roboto-serif';
+@import '@fontsource-variable/inter';
 
 :root {
-	--font-body: 'Public Sans Variable', 'Arial', 'Segoe UI', Arial, -apple-system, BlinkMacSystemFont,
-		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	/* --font-body: 'Public Sans Variable', 'Arial', 'Segoe UI', Arial, -apple-system, BlinkMacSystemFont, */
+	--font-body: 'Inter Variable', 'Arial', 'Segoe UI', -apple-system;
 	--font-mono: 'Fira Mono', monospace;
-	--font-syne: 'Montserrat Variable';
-	--font-roboto-serif: 'Roboto Serif';
+	/* --font-roboto-serif: 'Roboto Serif'; */
+	--font-highlight: 'Inter Variable';
 	--color-bg-0: #ffffff;
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
@@ -19,13 +20,12 @@
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
-	font-size: 14pt;
+	font-size: 12pt;
 	/* color: var(--color-text); */
 	/* font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem); */
 }
 
 body {
-	min-height: 100vh;
 	margin: 0;
 }
 
@@ -37,7 +37,8 @@ a {
 h1,
 h2,
 h3 {
-	font-family: var(--font-roboto-serif);
+	font-family: var(--font-highlight);
+	font-weight: bold;
 }
 
 @media (max-width: 1024px) {

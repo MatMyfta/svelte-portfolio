@@ -1,5 +1,5 @@
 <script>
-	import DetailedListItem from "./DetailedListItem.svelte";
+	import DetailedListItem from './DetailedListItem.svelte';
 
 	export let list;
 	export let title;

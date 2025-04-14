@@ -1,5 +1,6 @@
 <script>
 	import Meta from '$lib/components/Meta.svelte';
+	import MyfContainer from '$lib/components/MyfContainer.svelte';
 	import { formatDate } from '$lib/utils.js';
 	import Footer from '../../Footer.svelte';
 
@@ -29,15 +30,13 @@
 </svelte:head>
 
 <article class="">
-	<section class="">
-		<div class="container mx-auto px-4">
+	<section class="px-4">
+		<MyfContainer>
 			<hgroup class="py-4 px-2">
 				<h1 class="font-[600] text-center text-zinc-100 text-3xl md:text-5xl mb-4 mt-8">
 					{data.meta.title}
 				</h1>
-				<div
-					class="tags container mx-auto px-4 flex align-center justify-center flex-wrap gap-1 mb-8"
-				>
+				<div class="tag px-4 flex align-center justify-center flex-wrap gap-1 mb-8">
 					{#each data.meta.categories as category}
 						<div
 							class="line-clamp-1 py-2 px-3 rounded-full font-medium outline-offset-2 bg-zinc-700/50 text-zinc-400 text-sm"
@@ -53,19 +52,17 @@
 					<li class="">{data.meta.readingTime.text}</li>
 				</ul>
 			</hgroup>
-		</div>
+		</MyfContainer>
 	</section>
 
 	<div class="px-4">
 		<div
-			class="container article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl text-zinc-200 text-base"
+			class="article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl text-zinc-200 text-base"
 		>
 			<svelte:component this={data.content} />
 		</div>
 	</div>
 </article>
-
-<Footer />
 
 <style>
 	@media (min-width: 52rem) {
@@ -73,11 +70,13 @@
 			display: grid;
 			grid-template-columns:
 				clamp(1rem, 2rem, 5vw)
-				[fullbleed-start] minmax(auto, 1fr)
-				[wide-start] minmax(auto, 1fr)
+				[fullbleed-start] minmax(auto, 2fr)
+				[wide-start] minmax(auto, 2fr)
+				[large-start] minmax(auto, 2rem)
 				[main-start] min(100%, 65ch)
-				[main-end] minmax(auto, 1fr)
-				[wide-end] minmax(auto, 1fr)
+				[main-end] minmax(auto, 2rem)
+				[large-end] minmax(auto, 2fr)
+				[wide-end] minmax(auto, 2fr)
 				[fullbeed-end] clamp(1rem, 2rem, 5vw);
 		}
 	}
@@ -144,7 +143,7 @@
 	/* Code Blocks */
 	.article-container :global(pre) {
 		@apply bg-zinc-900 text-zinc-200 p-4 rounded-lg overflow-x-auto mb-6;
-		grid-column: wide;
+		grid-column: large;
 	}
 	.article-container :global(pre > code) {
 		@apply bg-transparent p-0;

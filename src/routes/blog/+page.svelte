@@ -1,14 +1,12 @@
 <script>
 	import { formatDate } from '$lib/utils.js';
-    import Meta from '$lib/components/Meta.svelte';
+	import Meta from '$lib/components/Meta.svelte';
 
 	export let data;
 </script>
 
-<Meta
-    title="Blog"
-/>
-<div class="container max-w-2xl lg:max-w-4xl mx-auto px-4">
+<Meta title="Blog" />
+<div class="container max-w-2xl lg:max-w-4xl mx-auto">
 	{#each data.sortedYears as year}
 		<h1 class="font-[700] text-zinc-100 text-3xl lg:text-4xl mt-8">{year}</h1>
 		<ul class="mt-4">
