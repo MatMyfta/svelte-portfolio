@@ -10,7 +10,7 @@
 
 <Meta />
 
-<section class="px-4 mt-24 mb-12 md:mt-12 md:mb-20 gap-4">
+<section class="mt-24 mb-12 md:mt-12 md:mb-20 gap-4">
 	<MyfContainer>
 		<div class="grid md:grid-cols-10 [&>div]:row-[1] items-center group">
 			<div class="max-w-2xl my-0 lg:my-0 md:col-start-1 md:col-span-7 z-[1]">
@@ -49,7 +49,7 @@
 	</MyfContainer>
 </section>
 
-<section class="px-4 mb-12 md:mb-20">
+<section class="mb-12 md:mb-20">
 	<MyfContainer>
 		<div class="grid gap-y-10 grid-cols-1 lg:grid-cols-5 gap-10">
 			<div

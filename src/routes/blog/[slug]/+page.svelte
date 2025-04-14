@@ -30,7 +30,7 @@
 </svelte:head>
 
 <article class="">
-	<section class="px-4">
+	<section class="">
 		<MyfContainer>
 			<hgroup class="py-4 px-2">
 				<h1 class="font-[600] text-center text-zinc-100 text-3xl md:text-5xl mb-4 mt-8">

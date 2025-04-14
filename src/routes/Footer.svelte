@@ -16,7 +16,7 @@
 	];
 </script>
 
-<footer class="px-4 mt-10 border-t-2 border-zinc-600/50 py-10">
+<footer class="mt-10 border-t-2 border-zinc-600/50 py-10">
 	<MyfContainer>
 		<div class="flex flex-col md:flex-row justify-between gap-8">
 			<div class="flex-shrink">

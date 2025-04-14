@@ -28,7 +28,7 @@
 		<div class="backdrop-blur-sm bg-zinc-800/0 row-span-5"></div>
 	</div>
 	<div class="py-4 z-[11]">
-		<div class="px-4 flex justify-between items-center">
+		<div class="flex justify-between items-center">
 			<MyfContainer>
 				<div class="flex gap-8 center items-center min-w-full justify-between">
 					<a href="/" class="text-white text-2xl font-[700]">Mateo Myftaraj.</a>
