@@ -3,6 +3,10 @@
 	import './styles.css';
 	import '../app.css';
 	import Footer from './Footer.svelte';
+	import { dev } from '$app/environment';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
 
 	// import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	// import { dev } from '$app/environment';
@@ -15,7 +19,7 @@
 <div class="app">
 	<Header />
 
-	<main class="mt-24">
+	<main class="mt-32">
 		<slot />
 	</main>
 

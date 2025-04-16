@@ -38,13 +38,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="hidden md:block col-start-6 col-end-11">
-    			<img
-    				src={sg_photo}
-    				alt=""
-    				class="max-h-[650px] opacity-100 hover:opacity-30 transition-opacity"
-    			/>
-    		</div> -->
 		</div>
 	</MyfContainer>
 </section>
@@ -53,7 +46,7 @@
 	<MyfContainer>
 		<div class="grid gap-y-10 grid-cols-1 lg:grid-cols-5 gap-10">
 			<div
-				class="lg:col-span-3 flex flex-col [&:hover>article:not(:hover)]:blur-sm [&>article]:transition-all [&>article]:duration-300"
+				class="lg:col-span-3 flex flex-col md:[&:hover>article:not(:hover)]:blur-sm md:[&>article]:transition-all md:[&>article]:duration-300"
 			>
 				{#each data.posts as post}
 					<ArticleCard {post} />
