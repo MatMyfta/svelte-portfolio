@@ -5,8 +5,10 @@
 	import Footer from './Footer.svelte';
 	import { dev } from '$app/environment';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
+	injectSpeedInsights();
 
 	// import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	// import { dev } from '$app/environment';
