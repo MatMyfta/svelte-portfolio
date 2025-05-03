@@ -57,7 +57,7 @@
 
 	<div class="px-4">
 		<div
-			class="article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl text-zinc-200 text-base"
+			class="article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl text-zinc-200"
 		>
 			<svelte:component this={data.content} />
 		</div>

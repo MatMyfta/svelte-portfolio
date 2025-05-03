@@ -1,5 +1,5 @@
 <script>
-	import personalPhotoWebp from '$lib/images/mateo_myftaraj_photo.webp';
+	import personalPhotoWebp from '$lib/images/mateo-sg.webp';
 
 	export let title = '';
 	export let description =
