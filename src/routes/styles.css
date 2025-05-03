@@ -10,13 +10,9 @@
 	--font-body: 'Inter Variable', 'Arial', 'Segoe UI', -apple-system;
 	--font-mono: 'Fira Mono', monospace;
 	/* --font-roboto-serif: 'Roboto Serif'; */
+	--color-body-background: #1c2324;
+	--color-primary: #344c2f;
 	--font-highlight: 'Inter Variable';
-	--color-bg-0: #ffffff;
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ffd43b;
-	--color-black: #121212;
-	--color-text: var(--color-black);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
@@ -27,10 +23,11 @@
 
 body {
 	margin: 0;
+	background-color: var(--color-body-background);
 }
 
 a {
-	color: var(--color-theme-1);
+	color: var(--color-primary);
 	text-decoration: none;
 }
 

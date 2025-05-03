@@ -142,7 +142,7 @@
 
 	/* Code Blocks */
 	.article-container :global(pre) {
-		@apply bg-zinc-900 text-zinc-200 p-4 rounded-lg overflow-x-auto mb-6;
+		@apply bg-zinc-900/50 text-zinc-200 p-4 rounded-lg overflow-x-auto mb-6;
 		grid-column: large;
 	}
 	.article-container :global(pre > code) {
@@ -156,7 +156,7 @@
 
 	/* Links */
 	.article-container :global(a) {
-		@apply text-amber-500 underline underline-offset-4 transition hover:text-amber-400;
+		@apply text-mindaro-500 underline underline-offset-4 transition hover:text-amber-400;
 	}
 
 	/* Horizontal Rule */

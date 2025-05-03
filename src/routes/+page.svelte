@@ -6,6 +6,7 @@
 	import ArticleCard from '$lib/components/ArticleCard.svelte';
 	import DetailedList from '$lib/components/DetailedList.svelte';
 	import MyfContainer from '$lib/components/MyfContainer.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <Meta />
@@ -18,23 +19,19 @@
 					Ciao, sono <span class="text-zinc-50">Mateo</span>. Ingegnere Software appassionato di
 					<span class="text-zinc-50"
 						>Sviluppo
-						<mark class="text-zinc-50 bg-amber-600 rounded-sm inline-block -rotate-2">Web</mark>
+						<mark class="text-zinc-50 bg-red-600 rounded-sm inline-block -rotate-2">Web</mark>
 						e
-						<mark class="text-zinc-50 bg-amber-600 rounded-sm inline-block -rotate-2">Mobile</mark
+						<mark class="text-zinc-50 bg-red-600 rounded-sm inline-block -rotate-2">Mobile</mark
 						></span
 					>
 				</h1>
-				<p class="mb-12 text-zinc-200 [&>strong]:text-zinc-300">
+				<p class="mb-6 text-zinc-400">
 					Sono un Developer Full-Stack e studente in Software Engineering alla Libera Università di
 					Bolzano.
 				</p>
 				<div class="flex flex-wrap justify-between items-center gap-4">
 					<div>
-						<a
-							href="/chi-sono"
-							class="line-clamp-1 py-2 px-3 sm:py-4 sm:px-6 rounded-full font-medium outline-offset-2 active:transition-none bg-zinc-700/50 hover:bg-zinc-700 transition text-zinc-400"
-							>Scopri di più</a
-						>
+						<Button href="/chi-sono" size="lg">Scopri di più</Button>
 					</div>
 				</div>
 			</div>
@@ -52,11 +49,7 @@
 					<ArticleCard {post} />
 				{/each}
 				<div class="mt-8 flex w-full justify-center">
-					<a
-						href="/blog"
-						class="line-clamp-1 py-4 px-6 rounded-full font-medium outline-offset-2 active:transition-none bg-zinc-700/50 hover:bg-zinc-700 transition text-zinc-400"
-						>Vai al blog</a
-					>
+					<Button href="/blog" size="lg">Vai al blog</Button>
 				</div>
 			</div>
 			<div class="lg:col-span-2 flex flex-col gap-10">

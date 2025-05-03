@@ -12,7 +12,7 @@
 			Purtroppo questa pagina è ancora in costruzione, ma presto sarà ricca di contenuti!
 		</p>
 	</div>
-	<a href="/blog" class="mb-4 underline underline-offset-4 text-amber-500"
+	<a href="/blog" class="mb-4 underline underline-offset-4 text-mindaro-500"
 		>Intanto puoi leggere il mio blog!</a
 	>
 </MyfContainer>
