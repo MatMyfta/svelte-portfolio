@@ -33,7 +33,7 @@
 	<section class="">
 		<MyfContainer>
 			<hgroup class="py-4 px-2">
-				<h1 class="font-[600] text-center text-zinc-100 text-3xl md:text-5xl mb-4 mt-8">
+				<h1 class="font-[600] text-center text-zinc-100 text-4xl mb-4 mt-8">
 					{data.meta.title}
 				</h1>
 				<div class="tag px-4 flex align-center justify-center flex-wrap gap-1 mb-8">

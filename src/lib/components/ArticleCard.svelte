@@ -10,7 +10,7 @@
 
 		{#if post.categories?.length}
 			<ul class="flex flex-wrap align-center gap-2 mb-4">
-				<li class="py-1 text-zinc-500 font-semibold">
+				<li class="py-1 text-zinc-500">
 					{post.date}
 				</li>
 				{#each post.categories as tag}
@@ -28,7 +28,7 @@
 		</p>
 
 		<a href="/blog/{post.slug}" aria-label="Read more about {post.title}" class="text-mindaro-500">
-			Continua a leggere →
+			Continua a leggere
 		</a>
 	</div>
 </article>
