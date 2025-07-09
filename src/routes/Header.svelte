@@ -93,7 +93,7 @@
 
 					{#if isOpen}
 						<div
-							class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-stone-700/30 ring-1 ring-black ring-opacity-5 z-50"
+							class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-stone-700 ring-1 ring-black ring-opacity-5 z-50"
 						>
 							<div class="py-1">
 								{#each items as item}
