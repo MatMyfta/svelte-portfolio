@@ -33,7 +33,7 @@
 
 	<section class="my-12">
 		<div
-			class="lg:col-span-2 flex items-start gap-4 [&>*]:basis-1/2 [&>*]:grow-1 [&>*]:flex-shrink-1"
+			class="flex flex-col [&>*]:w-full md:flex-row items-start gap-4"
 		>
 			<DetailedList list={data.work} title="Esperienza" />
 			<DetailedList list={data.education} title="Istruzione" />
