@@ -10,8 +10,7 @@
 	--font-body: 'Inter Variable', 'Arial', 'Segoe UI', -apple-system;
 	--font-mono: 'Fira Mono', monospace;
 	/* --font-roboto-serif: 'Roboto Serif'; */
-	--color-body-background: #1c2324;
-	--color-primary: #344c2f;
+	--color-primary: #d4d4d4;
 	--font-highlight: 'Inter Variable';
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -23,7 +22,6 @@
 
 body {
 	margin: 0;
-	background-color: var(--color-body-background);
 }
 
 a {

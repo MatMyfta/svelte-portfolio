@@ -6,7 +6,6 @@ export const prerender = true;
 
 export async function load({ fetch }) {
     try {
-        // ✅ Fetch latest blog posts
         const postsResponse = await fetch('/api/posts?limit=10');
         if (!postsResponse.ok) throw new Error('Failed to fetch posts');
         const posts = await postsResponse.json();

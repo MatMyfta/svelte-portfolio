@@ -1,8 +1,6 @@
 <script>
 	import Meta from '$lib/components/Meta.svelte';
-	import MyfContainer from '$lib/components/MyfContainer.svelte';
 	import { formatDate } from '$lib/utils.js';
-	import Footer from '../../Footer.svelte';
 
 	export let data;
 </script>
@@ -30,35 +28,31 @@
 </svelte:head>
 
 <article class="">
-	<section class="">
-		<MyfContainer>
-			<hgroup class="py-4 px-2">
-				<h1 class="font-[600] text-center text-zinc-100 text-4xl mb-4 mt-8">
-					{data.meta.title}
-				</h1>
-				<div class="tag px-4 flex align-center justify-center flex-wrap gap-1 mb-8">
-					{#each data.meta.categories as category}
-						<div
-							class="line-clamp-1 py-2 px-3 rounded-full font-medium outline-offset-2 bg-zinc-700/50 text-zinc-400 text-sm"
-						>
-							&num;{category}
-						</div>
-					{/each}
-				</div>
-				<ul class="flex justify-center gap-8 mb-6 p-0 text-zinc-400 text-sm">
-					<li class="list-none">
-						{formatDate(data.meta.date)}
-					</li>
-					<li class="">{data.meta.readingTime.text}</li>
-				</ul>
-			</hgroup>
-		</MyfContainer>
+	<section class="container max-w-2xl lg:max-w-3xl mx-auto px-4">
+		<hgroup class="py-4 px-2">
+			<h1 class="font-[600] text-center text-stone-50 text-4xl mb-4 mt-8">
+				{data.meta.title}
+			</h1>
+			<div class="tag px-4 flex align-center justify-center flex-wrap gap-1 mb-8">
+				{#each data.meta.categories as category}
+					<div
+						class="line-clamp-1 py-2 px-3 rounded-full font-medium outline-offset-2 bg-stone-700/50 text-stone-400 text-sm"
+					>
+						&num;{category}
+					</div>
+				{/each}
+			</div>
+			<ul class="flex justify-center gap-8 mb-6 p-0 text-stone-400 text-sm">
+				<li class="list-none">
+					{formatDate(data.meta.date)}
+				</li>
+				<li class="">{data.meta.readingTime.text}</li>
+			</ul>
+		</hgroup>
 	</section>
 
 	<div class="px-4">
-		<div
-			class="article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl text-zinc-200"
-		>
+		<div class="article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl text-stone-200">
 			<svelte:component this={data.content} />
 		</div>
 	</div>
@@ -82,7 +76,7 @@
 	}
 
 	.article-container {
-		@apply text-zinc-300;
+		@apply text-stone-400;
 	}
 
 	.article-container :global(*) {
@@ -95,15 +89,15 @@
 
 	/* Headings */
 	.article-container :global(h1) {
-		@apply text-4xl font-bold text-zinc-100 mb-6 pb-2;
+		@apply text-4xl font-bold text-stone-100 mb-6 pb-2;
 	}
 
 	.article-container :global(h2) {
-		@apply text-3xl font-semibold text-zinc-200 mb-5 pb-1;
+		@apply text-3xl font-semibold text-stone-200 mb-5 pb-1;
 	}
 
 	.article-container :global(h3) {
-		@apply text-2xl font-semibold text-zinc-300 mb-4;
+		@apply text-2xl font-semibold text-stone-300 mb-4;
 	}
 
 	.article-container :global(h4),
@@ -127,22 +121,22 @@
 	}
 
 	.article-container :global(strong) {
-		@apply text-zinc-50;
+		@apply text-stone-50;
 	}
 
 	/* Blockquotes */
 	.article-container :global(blockquote) {
-		@apply border-l-4 border-zinc-500 bg-zinc-800/40 text-zinc-300 italic p-4 mb-6;
+		@apply border-l-4 border-stone-500 bg-stone-800/40 text-stone-300 italic p-4 mb-6;
 	}
 
 	/* Inline Code */
 	.article-container :global(code) {
-		@apply bg-zinc-800 text-zinc-300 px-1 py-0.5 rounded text-sm;
+		@apply bg-stone-800 text-stone-300 px-1 py-0.5 rounded text-sm;
 	}
 
 	/* Code Blocks */
 	.article-container :global(pre) {
-		@apply bg-zinc-900/50 text-zinc-200 p-4 rounded-lg overflow-x-auto mb-6;
+		@apply bg-stone-900/50 text-stone-200 p-4 rounded-lg overflow-x-auto mb-6;
 		grid-column: large;
 	}
 	.article-container :global(pre > code) {
@@ -156,12 +150,12 @@
 
 	/* Links */
 	.article-container :global(a) {
-		@apply text-mindaro-500 underline underline-offset-4 transition hover:text-amber-400;
+		@apply text-stone-100 underline underline-offset-4 transition hover:text-amber-400;
 	}
 
 	/* Horizontal Rule */
 	.article-container :global(hr) {
-		@apply border-zinc-700 my-6;
+		@apply border-stone-700 my-6;
 	}
 
 	/* Images */

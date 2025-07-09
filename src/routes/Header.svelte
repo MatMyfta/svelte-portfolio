@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import MyfContainer from '$lib/components/MyfContainer.svelte';
 	import '@fontsource-variable/syne';
 
 	let items = [
@@ -19,38 +18,30 @@
 	];
 </script>
 
-<header class="fixed top-0 z-10 w-screen grid grid-cols-1 grid-rows-1 [&>*]:row-[1] [&>*]:col-[1]">
-	<div class="grid grid-cols-1 [&>*]:row-start-1 [&>*]:col-[1]">
-		<div class="backdrop-blur-3xl bg-eerie-100/80 row-span-1"></div>
-		<div class="backdrop-blur-2xl bg-eerie-100/60 row-span-2"></div>
-		<div class="backdrop-blur-xl bg-eerie-100/40 row-span-3"></div>
-		<div class="backdrop-blur-md bg-eerie-100/20 row-span-4"></div>
-		<div class="backdrop-blur-sm bg-eerie-100/0 row-span-5"></div>
-	</div>
-	<div class="py-4 z-[11]">
-		<div class="flex justify-between items-center">
-			<MyfContainer>
-				<div class="flex gap-8 center items-center min-w-full justify-between">
-					<a href="/" class="text-white text-2xl font-[700]">Mateo Myftaraj.</a>
-					<nav class="flex">
-						<ul class="flex items-center justify-between space-x-6">
-							{#each items as item}
-								<li
-									class="flex flex-col items-center"
-									aria-current={$page.url.pathname === item.route ? 'page' : undefined}
-								>
-									<a
-										class="font-semibold {$page.url.pathname === item.route
-											? 'text-mindaro-500'
-											: 'text-zinc-400'}"
-										href={item.route}>{item.name}</a
-									>
-								</li>
-							{/each}
-						</ul>
-					</nav>
+<header class="container max-w-2xl lg:max-w-3xl mx-auto px-4 py-8">
+	<div class="flex justify-between items-center w-full">
+		<div class="flex gap-8 center items-center min-w-full justify-between">
+			<a href="/" class="">
+				<div class="flex flex-col">
+					<span class="text-stone-100">&lt Mateo Myftaraj. /&gt</span>
+					<span class="text-stone-400">Software Engineer</span>
 				</div>
-			</MyfContainer>
+			</a>
+			<nav class="flex">
+				<ul class="flex items-center justify-between space-x-6">
+					{#each items as item}
+						<li
+							class="flex flex-col items-center"
+							aria-current={$page.url.pathname === item.route ? 'page' : undefined}
+						>
+							<a
+								class={$page.url.pathname === item.route ? 'text-stone-100' : 'text-stone-400'}
+								href={item.route}>{item.name}</a
+							>
+						</li>
+					{/each}
+				</ul>
+			</nav>
 		</div>
 	</div>
 </header>

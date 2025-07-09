@@ -1,6 +1,4 @@
 <script>
-	import MyfContainer from '$lib/components/MyfContainer.svelte';
-
 	import github from '$lib/images/github.svg?raw';
 	import linkedin from '$lib/images/linkedin.svg?raw';
 	import instagram from '$lib/images/instagram.svg?raw';
@@ -16,37 +14,24 @@
 	];
 </script>
 
-<footer class="mt-10 border-t-2 border-eerie-200/50 py-10">
-	<MyfContainer>
-		<div class="flex flex-col md:flex-row justify-between gap-8">
-			<div class="flex-shrink">
-				<p class="font-[700] text2xl lg:text-3xl mb-6 text-zinc-400">
-					Contattami e creiamo qualcosa di magico insieme <a
-						class="text-zinc-100 underline"
-						href="mailto:mateo@myftaraj.com">mateo@myftaraj.com</a
-					>
-				</p>
+<footer class="mt-10 py-10">
+	<div class="container max-w-2xl lg:max-w-3xl mx-auto px-4 text-center">
+		<p class="mb-2">
+			Contattami e creiamo qualcosa di magico insieme <a
+				class="text-stone-50 underline"
+				href="mailto:mateo@myftaraj.com">mateo@myftaraj.com</a
+			>
+		</p>
 
-				<div class="flex items-center gap-4">
-					<p class="text-zinc-500">...o seguimi su</p>
-					<div class="flex gap-4">
-						{#each socials as social}
-							<a
-								class="[&>svg]:w-6 [&>svg>g>path]:fill-zinc-400"
-								href={social.route}
-								target="_blank"
-							>
-								{@html social.icon}
-							</a>
-						{/each}
-					</div>
-				</div>
-			</div>
-			<div class="shrink-0">
-				<p class="text-zinc-500 text-sm">
-					&copy; {thisYear()} Mateo Myftaraj. All right reserved.
-				</p>
+		<div class="flex justify-center items-center gap-4">
+			<p class="">...o seguimi su</p>
+			<div class="flex gap-4">
+				{#each socials as social}
+					<a class="[&>svg]:w-6 [&>svg>g>path]:fill-stone-50" href={social.route} target="_blank">
+						{@html social.icon}
+					</a>
+				{/each}
 			</div>
 		</div>
-	</MyfContainer>
+	</div>
 </footer>

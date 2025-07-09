@@ -14,7 +14,7 @@
 <div class="app">
 	<Header />
 
-	<main class="mt-32">
+	<main class="my-12">
 		<slot />
 	</main>
 
