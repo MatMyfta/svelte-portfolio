@@ -12,8 +12,8 @@
 		<h1 class="font-[700] text-stone-50 text-3xl lg:text-4xl mt-12">{year}</h1>
 		<ul class="mt-4">
 			{#each data.postsByYear[year] as post}
-				<li class="my-4 flex items-center">
-					<span class="me-4">{formatDate(post.date)}</span>
+				<li class="my-4 flex items-baseline">
+					<span class="me-2 md:me-4 text-sm">{formatDate(post.date)}</span>
 					<a
 						href="/blog/{post.slug}"
 						class="font-[500] text-stone-50 hover:underline underline-offset-4">{post.title}</a
