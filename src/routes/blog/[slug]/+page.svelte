@@ -52,7 +52,7 @@
 	</section>
 
 	<div class="px-4">
-		<div class="article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl text-stone-200">
+		<div class="article-container mx-auto prose sm:px-3 md:px-6 py-4 rounded-xl">
 			<svelte:component this={data.content} />
 		</div>
 	</div>
@@ -73,10 +73,6 @@
 				[wide-end] minmax(auto, 2fr)
 				[fullbeed-end] clamp(1rem, 2rem, 5vw);
 		}
-	}
-
-	.article-container {
-		@apply text-stone-400;
 	}
 
 	.article-container :global(*) {
@@ -121,7 +117,7 @@
 	}
 
 	.article-container :global(strong) {
-		@apply text-stone-50;
+		@apply text-stone-300;
 	}
 
 	/* Blockquotes */
