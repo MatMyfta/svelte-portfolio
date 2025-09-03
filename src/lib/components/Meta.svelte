@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import personalPhotoWebp from '$lib/images/mateo-sg.webp';
 
 	export let title = '';
@@ -21,7 +22,11 @@
 	<meta name="author" content={author} />
 	<meta name="language" content={language} />
 	<meta name="robots" content={robots} />
-	<link rel="canonical" href={url} />
+	<meta
+		name="keywords"
+		content="portfolio, blog, sviluppo web, sviluppo mobile, ingegnere software, programmazione, Mateo Myftaraj"
+	/>
+	<link rel="canonical" href={$page.url} />
 
 	<meta property="og:title" content={_title} />
 	<meta property="og:type" content={type} />
@@ -36,4 +41,16 @@
 	<meta property="twitter:description" content={description} />
 	<meta property="twitter:image" content={image} />
 	<meta property="twitter:image:alt" content={imagealt} />
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Mateo Myftaraj",
+			"url": "https://www.myftaraj.com",
+			"jobTitle": "Software Engineer",
+			"sameAs": ["https://github.com/MatMyfta", "https://linkedin.com/in/mateomyftaraj"],
+			"description": "Ingegnere Software appassionato di Sviluppo Web e Mobile."
+		}
+	</script>
 </svelte:head>
