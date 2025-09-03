@@ -17,7 +17,7 @@
 	{/if}
 
 	<a href="/blog/{post.slug}" aria-label="Read more about {post.title}" class="">
-		<h1 class="my-2 font-semibold text-xl text-stone-50">{post.title}</h1>
+		<h3 class="my-2 font-semibold text-xl text-stone-50">{post.title}</h3>
 	</a>
 
 	<p class="mt-2 line-clamp-2">
