@@ -33,11 +33,61 @@ h1,
 h2,
 h3 {
 	font-family: var(--font-highlight);
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 @media (max-width: 1024px) {
 	:root {
 		font-size: 12pt;
 	}
+}
+
+/* TEMPORARY */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.5em !important;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 3rem !important;
+}
+
+.container {
+	margin: auto;
+	max-width: 1340px;
+}
+
+.article-container {
+	display: grid;
+	grid-template-columns:
+		[fullbleed-start] clamp(1rem, 2rem, 5vw)
+		[wide-start] minmax(auto, 2fr)
+		[large-start] minmax(auto, 2fr)
+		[main] min(46rem, calc(100% - 4rem))
+		[large-end] minmax(auto, 2fr)
+		[wide-end] minmax(auto, 2fr)
+		[fullbeed-end] clamp(1rem, 2rem, 5vw);
+}
+
+.article-container * {
+	grid-column: main / large-end;
+}
+
+article a {
+	color: white;
+	text-decoration: underline;
+}
+
+article a h3 {
+	text-decoration: none;
+}
+
+article p {
+	margin-bottom: 1rem !important;
 }
