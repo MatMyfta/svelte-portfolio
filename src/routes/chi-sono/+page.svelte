@@ -18,7 +18,7 @@
 		</p>
 
 		<figure class="cover-figure">
-			<img src={coverPicture} alt="" />
+			<img src={coverPicture} alt="Mateo Myftaraj Malaga Spain" />
 		</figure>
 
 		<p>
